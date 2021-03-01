@@ -1,0 +1,12 @@
+%Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+%Shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-size: 1rem;
+  @extend %Roboto;
+}
