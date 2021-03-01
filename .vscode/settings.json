@@ -1,3 +1,18 @@
 {
-    "liveServer.settings.port": 5502
+  "window.zoomLevel": 0,
+  "json.schemas": [],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "autoprefixer.options": {
+    "overrideBrowserslist": "last 4 versions"
+  },
+  "liveServer.settings.port": 5501,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": null
+    }
+  ]
 }

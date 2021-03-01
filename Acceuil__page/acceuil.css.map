@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAQA,AARA,CAQC,CARO;EACN,WAAW,EAAE,oBAAoB;CAClC;;AAMD,AAAA,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;CAEhB",
-    "sources": [
-        "acceuil.scss"
-    ],
-    "names": [],
-    "file": "acceuil.css"
-}
