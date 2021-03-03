@@ -1,5 +1,18 @@
-@import "./utils/variables";
+@import "./utils/_variables";
+
+html {
+  // 10px div by def of 16px
+  font-size: 62.5%;
+}
 
 body {
-  background: $color-primary;
+  box-sizing: border-box;
+  @extend %Roboto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
+}
+
+p {
+  @extend %Shrikhand;
 }

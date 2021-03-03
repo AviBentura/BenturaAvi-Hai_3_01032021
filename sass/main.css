@@ -1,4 +1,20 @@
 body {
-  background: #9356dc;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Shrikhand", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
