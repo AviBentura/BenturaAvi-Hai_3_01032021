@@ -1,7 +1,20 @@
-%Roboto {
-  font-family: "Roboto", sans-serif;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-%Shrikhand {
-  font-family: "Shrikhand", cursive;
+html {
+  // 10px défini sur 16px par défaut
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  @extend %Roboto;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
 }

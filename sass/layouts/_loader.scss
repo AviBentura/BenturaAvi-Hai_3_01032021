@@ -1,0 +1,112 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  z-index: 2;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+    z-index: 1;
+    animation: loader 4s forwards;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.t1 {
+  fill: $color-accent;
+  stroke: $color-secondary;
+}
+.t2 {
+  fill: url(#grad1);
+}
+.t3 {
+  fill: $color-secondary;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 135px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: $color-accent;
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.13);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  @for $i from 1 through 2 {
+    &:nth-child(#{$i}) {
+      left: 13px;
+    }
+  }
+  &:nth-child(1) {
+    animation: lds-ellipsis1 0.8s infinite;
+  }
+  @for $i from 2 through 5 {
+    &:nth-child(#{$i}) {
+      animation: lds-ellipsis2 0.8s infinite;
+    }
+  }
+  &:nth-child(3) {
+    left: 37px;
+  }
+  &:nth-child(4) {
+    left: 61px;
+  }
+  &:nth-child(5) {
+    left: 85px;
+  }
+  &:nth-child(6) {
+    left: 109px;
+    animation: lds-ellipsis3 0.8s infinite;
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
