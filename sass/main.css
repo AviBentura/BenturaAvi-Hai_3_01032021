@@ -58,17 +58,39 @@ body {
   width: 16.3rem;
 }
 
-/*.description {
-  @include disposition;
-  flex-direction: column;
-  & h1 {
-    @include disposition;
-    text-align: center;
-    //padding: $size;
-    padding-top: $size-1 * 4.3;
-    //width: $size-2 * 2.3;
-  }
-}*/
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 6.3rem;
+  padding-top: 4.3rem;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
