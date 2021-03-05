@@ -1,0 +1,22 @@
+.header {
+  @include disposition;
+  &__logo {
+    @include disposition;
+    height: $size;
+  }
+  &__logo img {
+    width: ($size + 10);
+  }
+}
+
+/*.description {
+  @include disposition;
+  flex-direction: column;
+  & h1 {
+    @include disposition;
+    text-align: center;
+    //padding: $size;
+    padding-top: $size-1 * 4.3;
+    //width: $size-2 * 2.3;
+  }
+}*/

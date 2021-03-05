@@ -1,0 +1,10 @@
+@mixin disposition {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+@mixin form-shadow {
+  box-shadow: -3px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
+}
