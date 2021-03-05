@@ -1,0 +1,23 @@
+form {
+  @include disposition;
+  width: 101%;
+  height: $size;
+  @include form-shadow;
+  background: $gray;
+  & label {
+    display: flex;
+    justify-content: center;
+    font-size: $size-1 * 1.7;
+    color: $light-black;
+    padding: $size-1 * 1.8;
+  }
+  & input[type="search"] {
+    border: none;
+    font-weight: bold;
+    font-size: $size-1 * 1.5;
+    background: $gray;
+  }
+  & ::-webkit-input-placeholder {
+    color: $light-black;
+  }
+}
