@@ -5,3 +5,31 @@
 %Shrikhand {
   font-family: "Shrikhand", cursive;
 }
+
+form {
+  & label {
+    font-size: $size-1 * 1.7;
+  }
+  & input[type="search"] {
+    font-weight: bold;
+    font-size: $size-1 * 1.5;
+  }
+}
+
+.description {
+  & h1 {
+    font-size: $size-1 * 2.4;
+  }
+  & p {
+    font-size: $size-1 * 1.8;
+  }
+  & button {
+    font-size: $size-1 * 1.6;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+  }
+}
+
+nav {
+  font-size: $size-1 * 1.5;
+}

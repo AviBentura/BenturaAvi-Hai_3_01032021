@@ -1,0 +1,6 @@
+.description {
+  & button {
+    @include padding-button;
+    color: #fff;
+  }
+}

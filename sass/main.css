@@ -27,6 +27,33 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+form label {
+  font-size: 1.7rem;
+}
+
+form input[type="search"] {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description h1 {
+  font-size: 2.4rem;
+}
+
+.description p {
+  font-size: 1.8rem;
+}
+
+.description button {
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +100,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #f7f7f7;
 }
 
 .description h1 {
@@ -89,6 +117,12 @@ body {
   text-align: center;
   padding: 6.3rem;
   padding-top: 4.3rem;
+  padding-bottom: 2.3rem;
+}
+
+.description p {
+  text-align: center;
+  padding-bottom: 3.4rem;
 }
 
 form {
@@ -102,33 +136,38 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 101%;
-  height: 6.3rem;
+  width: 103%;
+  height: 5.5rem;
   -webkit-box-shadow: -3px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
           box-shadow: -3px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
   background: #e6e6e6;
+  padding-left: 3.3rem;
 }
 
 form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.7rem;
+  display: inline-block;
   color: #333333;
   padding: 1.8rem;
 }
 
 form input[type="search"] {
   border: none;
-  font-weight: bold;
-  font-size: 1.5rem;
   background: #e6e6e6;
 }
 
 form ::-webkit-input-placeholder {
   color: #333333;
+}
+
+.description button {
+  padding: 2rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+  margin-bottom: 5.7rem;
+  border-radius: 40px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
