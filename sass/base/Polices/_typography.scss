@@ -33,3 +33,18 @@ form {
 nav {
   font-size: $size-1 * 1.5;
 }
+.nav__fonction {
+  & h4 {
+    font-size: 1.8rem;
+  }
+  & .fas {
+    font-size: 2rem;
+    color: $dark-gray;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  & .fa-list-ul {
+    padding-top: 0.2rem;
+  }
+}

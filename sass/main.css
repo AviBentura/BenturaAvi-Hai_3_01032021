@@ -54,6 +54,23 @@ nav {
   font-size: 1.5rem;
 }
 
+.nav__fonction h4 {
+  font-size: 1.8rem;
+}
+
+.nav__fonction .fas {
+  font-size: 2rem;
+  color: gray;
+}
+
+.nav__fonction .fas:hover {
+  color: #9356dc;
+}
+
+.nav__fonction .fa-list-ul {
+  padding-top: 0.2rem;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +142,40 @@ nav {
   padding-bottom: 3.4rem;
 }
 
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.description h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 6.3rem;
+  padding-top: 4.3rem;
+  padding-bottom: 2rem;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,22 +187,30 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 103%;
-  height: 5.5rem;
-  -webkit-box-shadow: -3px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
-          box-shadow: -3px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
+  width: 100%;
+  height: 6.3rem;
+  -webkit-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
+          box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.75) inset;
   background: #e6e6e6;
-  padding-left: 3.3rem;
+  padding-left: 2.5rem;
 }
 
 form label {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.7rem;
   color: #333333;
   padding: 1.8rem;
 }
 
 form input[type="search"] {
   border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
   background: #e6e6e6;
 }
 
@@ -169,5 +228,61 @@ form ::-webkit-input-placeholder {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: #fff;
+}
+
+nav h2 {
+  padding-top: 4.7rem;
+  padding-bottom: 3.2rem;
+  padding-left: 2rem;
+}
+
+nav ul {
+  margin: 0 9% 0 11%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav div {
+  height: 2.5rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav__fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f7f7f7;
+  height: 7.4rem;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 0px 5px 10px 0px #e6e6e6;
+          box-shadow: 0px 5px 10px 0px #e6e6e6;
+  position: relative;
+}
+
+.nav__fonction h4 {
+  padding-left: 2.4rem;
+  color: #000;
+}
+
+.nav__fonction span {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #9356dc;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 0 0 8px;
 }
 /*# sourceMappingURL=main.css.map */
