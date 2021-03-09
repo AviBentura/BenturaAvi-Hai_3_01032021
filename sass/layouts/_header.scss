@@ -12,7 +12,7 @@
 .description {
   @include disposition;
   flex-direction: column;
-  background: $dark-white;
+  @include fond-colors;
   & h1 {
     @include disposition;
     text-align: center;
