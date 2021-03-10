@@ -62,6 +62,21 @@ nav {
     font-weight: lighter;
   }
   & i {
-    font-size: 23px;
+    font-size: 2.6rem;
+  }
+}
+
+.new {
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+}
+
+.pied-page--text {
+  & li {
+    font-size: 1.5rem;
+  }
+  & i {
+    font-size: 1.2rem;
   }
 }

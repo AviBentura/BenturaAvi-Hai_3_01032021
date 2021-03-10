@@ -8,10 +8,15 @@
 $color-primary: rgb(147, 86, 220);
 $color-secondary: #ff79da;
 $color-accent: #99e2d0;
+$mint: #008766;
+$mint-light: #99e2d0;
 $gray: darken(#fff, 10%);
-$light-black: darken(#fff, 80%);
-$dark-white: lighten(#000, 97%);
-$dark-gray: lighten(#000, 50%);
+$black: #000;
+$white: #fff;
+$light-black: darken($white, 80%);
+$dark-white: lighten($black, 97%);
+$dark-gray: lighten($black, 50%);
+$dark-obscure: lighten($black, 21%);
 
 $size: 6.3rem;
 $size-1: 1rem;

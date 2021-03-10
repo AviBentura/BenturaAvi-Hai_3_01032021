@@ -1,3 +1,27 @@
 footer {
-  background: red;
+  background: $dark-obscure;
+  height: $size-2 * 2;
+  padding: 2.5rem;
+  & ul {
+    list-style-type: none;
+  }
+  & a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.pied-page--text {
+  & ul {
+    padding-top: 1.8rem;
+  }
+  & li {
+    padding-bottom: 1rem;
+  }
+  & i {
+    padding-right: 1.2rem;
+  }
+  & .fa-hands-helping {
+    padding-right: 0.2rem;
+  }
 }
