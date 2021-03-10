@@ -397,34 +397,11 @@ nav a {
   position: relative;
 }
 
-.coeur:hover {
-  -webkit-animation: heart 1.2s ease-in-out;
-          animation: heart 1.2s ease-in-out;
-}
-
-@-webkit-keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
-}
-
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
-}
-
 .coeur::before,
 .coeur::after {
   position: absolute;
-  top: -37px;
-  left: 277px;
+  top: -3.7rem;
+  right: 1.4rem;
   content: "";
   height: 23px;
   width: 14px;
@@ -437,7 +414,7 @@ nav a {
 }
 
 .coeur::after {
-  left: 263px;
+  right: 2.8rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: 100% 100%;
@@ -451,8 +428,8 @@ nav a {
 .carre::before,
 .carre::after {
   position: absolute;
-  top: -27px;
-  left: 277px;
+  top: -2.7rem;
+  right: 1.4rem;
   content: "";
   height: 12px;
   width: 14px;
@@ -464,7 +441,7 @@ nav a {
 }
 
 .carre::after {
-  left: 263px;
+  right: 2.8rem;
   z-index: 1;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -473,9 +450,9 @@ nav a {
 }
 
 .tr1 {
-  position: relative;
-  top: -4rem;
-  left: 263px;
+  position: absolute;
+  top: -8.3rem;
+  right: 2.9rem;
   z-index: 2;
   fill: url(#grad2);
   opacity: 0;

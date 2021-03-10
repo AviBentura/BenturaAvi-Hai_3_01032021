@@ -61,18 +61,6 @@
 
 .coeur {
   position: relative;
-  &:hover {
-    animation: heart 1.2s ease-in-out;
-  }
-}
-
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  0% {
-    opacity: 1;
-  }
 }
 
 .coeur::before,
@@ -80,7 +68,7 @@
   @include coeur;
 }
 .coeur::after {
-  left: 263px;
+  right: 2.8rem;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
@@ -94,16 +82,16 @@
   @include carre;
 }
 .carre::after {
-  left: 263px;
+  right: 2.8rem;
   z-index: 1;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
 
 .tr1 {
-  position: relative;
-  top: -4rem;
-  left: 263px;
+  position: absolute;
+  top: -8.3rem;
+  right: 2.9rem;
   z-index: 2;
   fill: url(#grad2);
   opacity: 0;

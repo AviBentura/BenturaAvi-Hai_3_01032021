@@ -53,8 +53,8 @@
 
 @mixin coeur {
   position: absolute;
-  top: -37px;
-  left: 277px;
+  top: -3.7rem;
+  right: 1.4rem;
   content: "";
   height: 23px;
   width: 14px;
@@ -66,8 +66,8 @@
 
 @mixin carre {
   position: absolute;
-  top: -27px;
-  left: 277px;
+  top: -2.7rem;
+  right: 1.4rem;
   content: "";
   height: 12px;
   width: 14px;
