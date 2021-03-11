@@ -1,0 +1,14 @@
+.header__logo {
+  & span {
+    position: absolute;
+    top: 1.9rem;
+    left: 2rem;
+    color: $dark-obscure;
+  }
+}
+.header__image {
+  @include disposition;
+  & img {
+    width: 100%;
+  }
+}

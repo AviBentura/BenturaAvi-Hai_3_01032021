@@ -3,7 +3,7 @@
 @import "./utils/_functions";
 @import "./base/Polices/_base.scss";
 @import "./base/Polices/_typography.scss";
-//@import "./layouts/_loader";
+@import "./layouts/_loader";
 @import "./layouts/_header";
 @import "./layouts/_form.scss";
 @import "./components/_buttons";
@@ -11,3 +11,4 @@
 @import "./layouts/_section.scss";
 @import "./layouts/_footer";
 @import "./layouts/_container";
+@import "./pages/_LaPaletteDuGout";

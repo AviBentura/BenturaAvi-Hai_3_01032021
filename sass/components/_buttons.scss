@@ -1,6 +1,11 @@
 .description {
   & button {
     @include padding-button;
-    color: #fff;
+    @include button-shadow;
+    color: $white;
+    &:hover {
+      @include button-shadow-hover;
+      @include background-button-obscure;
+    }
   }
 }
