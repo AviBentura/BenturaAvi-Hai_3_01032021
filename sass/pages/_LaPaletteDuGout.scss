@@ -1,14 +1,38 @@
-.header__logo {
-  & span {
-    position: absolute;
-    top: 1.9rem;
-    left: 2rem;
-    color: $dark-obscure;
+.menu {
+  border-radius: 3.3rem;
+  background: $light-white;
+  margin-top: -3rem;
+  & h1 {
+    @include padding-h1;
+  }
+  &__titre {
+    display: flex;
+    justify-content: center;
+  }
+  & .icone {
+    position: relative;
   }
 }
-.header__image {
-  @include disposition;
-  & img {
-    width: 100%;
-  }
+
+.coeur--menu {
+  position: relative;
+  top: 7rem;
+  left: 0.6rem;
+}
+.carre--menu {
+  position: relative;
+}
+
+.carre--menu::before,
+.carre--menu::after {
+  @include carre-menu;
+}
+.carre--menu::after {
+  @include carre-menu-after;
+}
+
+.tr1--menu {
+  position: relative;
+  top: 3rem;
+  right: 0.8rem;
 }

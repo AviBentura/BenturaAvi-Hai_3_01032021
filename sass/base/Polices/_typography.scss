@@ -91,6 +91,27 @@ nav {
 
 .menu {
   & h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    @extend %Shrikhand;
+  }
+}
+
+.art {
+  &__titre {
+    & h3 {
+      font-size: 1.7rem;
+      font-weight: lighter;
+    }
+  }
+  &__list .titre {
+    font-size: 1rem;
+    & h4 {
+      font-size: 1.7rem;
+      letter-spacing: 0.1px;
+    }
+    & p {
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
   }
 }
