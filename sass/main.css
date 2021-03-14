@@ -619,7 +619,14 @@ nav a {
   height: 17.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
   border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card .img--1 {
+  -o-object-position: 0 62%;
+     object-position: 0 62%;
 }
 
 .card a {
