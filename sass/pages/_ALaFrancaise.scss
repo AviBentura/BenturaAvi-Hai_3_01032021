@@ -1,0 +1,25 @@
+.header__image {
+  &--2 {
+    background-image: url(/public/img/restaurants/ALaFrancaise.jpg);
+    background-position: -20px 0px;
+    background-size: 109%;
+  }
+}
+
+.menu {
+  &__titre {
+    &--2 {
+      justify-content: space-between;
+    }
+  }
+  &--2 {
+    & h1 {
+      padding-left: 2.5rem;
+    }
+  }
+}
+.icone {
+  &--2 {
+    padding-right: 2.5rem;
+  }
+}

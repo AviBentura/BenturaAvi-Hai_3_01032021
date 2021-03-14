@@ -479,11 +479,15 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(/public/img/restaurants/LaPaletteDuGout.jpg);
+  background-size: 114%;
+  background-position-x: 69%;
 }
 
 .header__image img {
   width: 100%;
   z-index: -1;
+  opacity: 0;
 }
 
 form {
@@ -851,20 +855,22 @@ footer a {
 }
 
 .menu h1 {
-  padding: 2.5rem 5rem 0 0;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .menu__titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu .icone {
   position: relative;
+  padding-right: 2.5rem;
 }
 
 .coeur--menu {
@@ -1035,5 +1041,41 @@ footer a {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
+}
+
+.header__image--1 {
+  background-image: url(/public/img/restaurants/LaNoteEnchantee.jpg);
+  background-position: 0px -100px;
+  background-size: 100%;
+}
+
+.menu--1 {
+  margin-top: -25.3rem;
+}
+
+.header__image--2 {
+  background-image: url(/public/img/restaurants/ALaFrancaise.jpg);
+  background-position: -20px 0px;
+  background-size: 109%;
+}
+
+.menu__titre--2 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu--2 h1 {
+  padding-left: 2.5rem;
+}
+
+.icone--2 {
+  padding-right: 2.5rem;
+}
+
+.header__image--3 {
+  background-image: url(/public/img/restaurants/LeDeliceDesSens.jpg);
+  background-position: -27px -2px;
+  background-size: 111%;
 }
 /*# sourceMappingURL=main.css.map */

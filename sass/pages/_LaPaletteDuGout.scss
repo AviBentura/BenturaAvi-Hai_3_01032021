@@ -4,13 +4,15 @@
   margin-top: -3rem;
   & h1 {
     @include padding-h1;
+    padding-left: 2.5rem;
   }
   &__titre {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   & .icone {
     position: relative;
+    padding-right: 2.5rem;
   }
 }
 
