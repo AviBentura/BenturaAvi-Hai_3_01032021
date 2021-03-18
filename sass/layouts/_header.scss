@@ -50,12 +50,10 @@
 }
 .header__image {
   @include disposition;
-  background-image: url(/public/img/restaurants/LaPaletteDuGout.jpg);
-  background-size: 114%;
-  background-position-x: 69%;
+  overflow: hidden;
   & img {
-    width: 100%;
+    @include disposition-image;
+    width: 110%;
     z-index: -1;
-    opacity: 0;
   }
 }

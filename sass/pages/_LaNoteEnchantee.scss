@@ -1,8 +1,11 @@
 .header__image {
   &--1 {
-    background-image: url(/public/img/restaurants/LaNoteEnchantee.jpg);
-    background-position: 0px -100px;
-    background-size: 100%;
+    overflow: hidden;
+    & img {
+      @include disposition-image;
+      object-position: 0.2rem -10rem;
+      z-index: -1;
+    }
   }
 }
 

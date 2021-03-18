@@ -1,0 +1,32 @@
+.container {
+  &__effect {
+    width: 100%;
+    height: 4.5rem;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    margin: 1.4rem;
+    text-decoration: none;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+    & i {
+      width: 37%;
+      height: 32%;
+      margin: 0;
+      padding: 0;
+      top: 24px;
+      left: 20px;
+      transform: rotate(90deg);
+      transition-delay: 125ms;
+    }
+    &:hover {
+      transform: translateX(-65px);
+      & {
+        i {
+          transform: rotate(360deg);
+          transform-origin: 50% 50%;
+        }
+      }
+    }
+  }
+}

@@ -2,14 +2,12 @@
   @include fond-colors;
   @include marge-section;
   & img {
-    width: 100%;
+    @include disposition-image;
     height: 17.5rem;
-    object-fit: cover;
-    object-position: bottom;
     border-radius: 1.5rem 1.5rem 0 0;
   }
   & .img--1 {
-    object-position: 0 62%;
+    object-position: -2px 62%;
   }
   & a {
     text-decoration: none;
@@ -27,6 +25,7 @@
     margin: 2.8rem 0 1.7rem 0;
     @include nav-shadow;
     border-radius: 20px;
+    overflow: hidden;
   }
   &__description {
     height: $size-1 * 7.7;
@@ -34,6 +33,9 @@
     padding: 1.5rem;
     background: #fff;
     border-radius: 0 0 1.5rem 1.5rem;
+  }
+  &__image {
+    max-width: 100%;
   }
   & span {
     @include heart-place;
@@ -55,12 +57,13 @@
 
 .new {
   position: absolute;
-  top: 1.2rem;
-  right: 1.4rem;
+  bottom: 13.9rem;
+  right: 1.3rem;
   padding: ($size-1) * 0.7 ($size-1) * 1.1 ($size-1) * 0.7 ($size-1) * 1.1;
   border-radius: ($size-1) * 0.2;
   color: $mint;
   background: $mint-light;
+  z-index: 2;
 }
 
 .coeur {

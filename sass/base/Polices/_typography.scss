@@ -103,11 +103,11 @@ nav {
       font-weight: lighter;
     }
   }
-  &__list .titre {
+  &__list--titre {
     font-size: 1.6rem;
     margin-bottom: 0.8rem;
     & h4 {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       letter-spacing: 0.1px;
     }
     & p {
@@ -118,6 +118,12 @@ nav {
   &__list {
     & span {
       font-weight: bolder;
+    }
+    & i {
+      font-size: 2.4rem;
+    }
+    & .effect--1 {
+      font-size: 1.54rem;
     }
   }
 }
