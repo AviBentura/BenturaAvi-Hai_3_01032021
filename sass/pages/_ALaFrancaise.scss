@@ -1,0 +1,17 @@
+.menu {
+  &__titre {
+    &--2 {
+      justify-content: space-between;
+    }
+  }
+  &--2 {
+    & h1 {
+      padding-left: 2.5rem;
+    }
+  }
+}
+.icone {
+  &--2 {
+    padding-right: 2.5rem;
+  }
+}

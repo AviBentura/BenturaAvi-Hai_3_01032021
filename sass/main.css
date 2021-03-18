@@ -1177,6 +1177,7 @@ footer a {
   left: 5px;
   margin: 1.4rem;
   text-decoration: none;
+  color: #000;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -1196,6 +1197,7 @@ footer a {
           transform: rotate(90deg);
   -webkit-transition-delay: 125ms;
           transition-delay: 125ms;
+  color: #fff;
 }
 
 .container__effect:hover {

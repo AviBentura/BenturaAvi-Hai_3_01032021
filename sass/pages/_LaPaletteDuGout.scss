@@ -1,0 +1,40 @@
+.menu {
+  border-radius: 3.3rem 3.3rem 0 0;
+  background: $light-white;
+  margin-top: -5rem;
+  & h1 {
+    @include padding-h1;
+    padding-left: 2.5rem;
+  }
+  &__titre {
+    display: flex;
+    justify-content: space-between;
+  }
+  & .icone {
+    position: relative;
+    padding-right: 2.5rem;
+  }
+}
+
+.coeur--menu {
+  position: relative;
+  top: 7rem;
+  left: 0.6rem;
+}
+.carre--menu {
+  position: relative;
+}
+
+.carre--menu::before,
+.carre--menu::after {
+  @include carre-menu;
+}
+.carre--menu::after {
+  @include carre-menu-after;
+}
+
+.tr1--menu {
+  position: relative;
+  top: 3rem;
+  right: 0.8rem;
+}

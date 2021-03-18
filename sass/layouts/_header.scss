@@ -1,0 +1,59 @@
+.header {
+  @include disposition;
+  &__logo {
+    @include disposition;
+    height: $size;
+  }
+  &__logo img {
+    width: ($size + 10);
+  }
+}
+
+.description {
+  @include disposition;
+  flex-direction: column;
+  @include fond-colors;
+  & h1 {
+    @include disposition;
+    text-align: center;
+    padding: $size;
+    padding-top: $size-1 * 4.3;
+    padding-bottom: $size-1 * 2.3;
+  }
+  & p {
+    text-align: center;
+    padding-bottom: $size-1 * 3.4;
+  }
+}
+
+.description {
+  @include disposition;
+  flex-direction: column;
+  & h1 {
+    @include disposition;
+    text-align: center;
+    padding: $size;
+    padding-top: $size-1 * 4.3;
+    padding-bottom: $size-1 * 2;
+  }
+}
+
+// La palette du goût
+
+.header__logo {
+  & span {
+    position: absolute;
+    top: 1.9rem;
+    left: 2rem;
+    color: $dark-obscure;
+  }
+}
+.header__image {
+  @include disposition;
+  overflow: hidden;
+  & img {
+    @include disposition-image;
+    width: 110%;
+    z-index: -1;
+  }
+}
