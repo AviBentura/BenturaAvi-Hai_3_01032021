@@ -17,9 +17,6 @@
     }
     & .place {
       transform: translateX(0);
-      @media screen and (max-width: 375px) {
-        transition: transform 0.7s cubic-bezier(1, 0.05, 0.61, 0.94);
-      }
       transition: transform 0.5s ease-in-out;
       & i {
         width: 100%;
@@ -27,25 +24,16 @@
         margin: 0;
         color: $white;
         transform: rotate(90deg);
-        @media screen and (max-width: 375px) {
-          transition: transform 0.3s ease-in 400ms;
-        }
         transition: transform 0.22s ease-in 250ms;
       }
     }
     &:hover {
       & .art__list {
         &--titre {
-          @media screen and (max-width: 375px) {
-            width: 63%;
-          }
           width: 100%;
         }
       }
       & .place {
-        @media screen and (max-width: 375px) {
-          transform: translateX(-0.1rem);
-        }
         transform: translateX(-6.5rem);
         & i {
           transform: rotate(360deg);
