@@ -79,22 +79,12 @@
   }
   &__list--bouton {
     & button {
-      padding-left: 4.8rem;
-      padding-right: 4.8rem;
+      @include padding-button-list;
     }
   }
 }
 
 @keyframes line {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes circle {
   0% {
     transform: scaleX(0);
   }

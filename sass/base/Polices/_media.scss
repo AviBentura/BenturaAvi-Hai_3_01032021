@@ -1,0 +1,17 @@
+/*.container {
+  &__effect {
+    & .art__list {
+      &--titre {
+        width: 100%;
+        transition: width 0.7s ease-in-out;
+      }
+    }
+    &:hover {
+      & .art__list {
+        &--titre {
+          width: 63%;
+        }
+      }
+    }
+  }
+}*/

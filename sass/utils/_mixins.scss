@@ -29,6 +29,11 @@
   );
 }
 
+@mixin padding-button-list {
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+}
+
 @mixin background-button-obscure {
   background-image: linear-gradient(
     to bottom right,
