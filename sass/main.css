@@ -151,6 +151,11 @@ nav {
   font-size: 1.54rem;
 }
 
+.art__list .trunk {
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
 .loader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,18 +1003,6 @@ footer a {
   border-radius: 2rem;
   margin: 1.4rem;
   overflow: hidden;
-  /*--circle {
-      position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      width: 1440px;
-      height: 100%;
-      right: 0;
-      & i {
-        padding: 2.5rem;
-        transform: translate(0.4rem, 0);
-      }
-    }*/
 }
 
 .art__list--titre {
@@ -1017,8 +1010,6 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 1.2rem;
-  padding-top: 1.5rem;
   margin: 0;
 }
 
@@ -1033,6 +1024,15 @@ footer a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.art__list--description p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transform: width 2s linear 1s;
+          transform: width 2s linear 1s;
 }
 
 .art__list--bouton {
@@ -1063,22 +1063,21 @@ footer a {
   position: absolute;
   width: 6.5rem;
   top: -14px;
-  right: -46px;
+  right: -80px;
   height: 7.35rem;
   background-color: #99e2d0;
   border-radius: 0 2rem 2rem 0;
 }
 
 .art__list .effect--1 {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding-right: 25px;
+  padding-bottom: 1px;
+  background: #fff;
   border-radius: initial;
-  background: transparent;
+  width: 10px;
   height: 3.1rem;
 }
 
@@ -1172,43 +1171,92 @@ footer a {
 .container__effect {
   width: 100%;
   height: 4.5rem;
-  position: absolute;
-  top: 0;
-  left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 1.4rem;
   text-decoration: none;
   color: #000;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-.container__effect i {
-  width: 37%;
+.container__effect p {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container__effect .art__list--titre {
+  width: 100%;
+  -webkit-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+
+.container__effect .place {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+.container__effect .place i {
+  width: 100%;
   height: 32%;
   margin: 0;
   padding: 0;
   top: 24px;
   left: 20px;
+  color: #fff;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition-delay: 125ms;
-          transition-delay: 125ms;
-  color: #fff;
+  -webkit-transition: -webkit-transform 0.3s ease-in 400ms;
+  transition: -webkit-transform 0.3s ease-in 400ms;
+  transition: transform 0.3s ease-in 400ms;
+  transition: transform 0.3s ease-in 400ms, -webkit-transform 0.3s ease-in 400ms;
 }
 
-.container__effect:hover {
-  -webkit-transform: translateX(-65px);
-          transform: translateX(-65px);
+.container__effect:hover .art__list--titre {
+  width: 63%;
 }
 
-.container__effect:hover i {
+.container__effect:hover .place {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.container__effect:hover .place i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes tronk {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  19% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
+  }
+}
+
+@keyframes tronk {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  19% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(65px);
+            transform: translateX(65px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
