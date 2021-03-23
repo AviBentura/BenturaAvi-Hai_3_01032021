@@ -71,7 +71,7 @@
 }*/
 
 .art__list:nth-of-type(1) {
-  animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 800ms both;
+  animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 900ms both;
 }
 @for $i from 2 through 3 {
   .art__list:nth-of-type(#{$i}) {
@@ -79,7 +79,7 @@
       0.8s
       cubic-bezier(0.39, 0.575, 0.565, 1)
       ($i * 200ms) +
-      600ms
+      700ms
       both;
   }
 }
@@ -89,7 +89,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(2.2rem);
   }
   100% {
     transform: translateY(0);
