@@ -33,6 +33,13 @@
     padding: 1.5rem;
     background: #fff;
     border-radius: 0 0 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
   }
   &__image {
     max-width: 100%;
@@ -65,9 +72,16 @@
   background: $mint-light;
   z-index: 2;
 }
+.cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .coeur {
   position: relative;
+  top: 4.5rem;
+  right: -0.5rem;
 }
 
 .coeur::before,
@@ -82,6 +96,8 @@
 
 .carre {
   position: relative;
+  top: 0;
+  right: 0;
 }
 
 .carre::before,
@@ -97,8 +113,8 @@
 
 .tr1 {
   position: absolute;
-  top: -8.3rem;
-  right: 2.9rem;
+  top: 0.5rem;
+  right: 0.9rem;
   z-index: 2;
   fill: url(#grad2);
   opacity: 0;
@@ -107,6 +123,12 @@
     opacity: 1;
     animation: progress-heart 0.8s cubic-bezier(0, 0.88, 0.56, 1) forwards;
   }
+}
+
+.icone-menu {
+  position: relative;
+  width: 37px;
+  height: 33px;
 }
 
 @keyframes progress-heart {
