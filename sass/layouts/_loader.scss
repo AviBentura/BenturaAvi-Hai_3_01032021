@@ -1,19 +1,8 @@
 .loader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  left: 50%;
-  top: 50%;
+  @include loader;
   transform: translate(-50%, -50%);
-  z-index: 2;
   &__background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
+    @include loader__background;
     z-index: 1999;
     animation: loader 4s forwards;
   }

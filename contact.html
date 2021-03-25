@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Nous contacter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+    <title>Ohmyfood | Page Contact</title>
+    <script
+      src="https://kit.fontawesome.com/1bf1c4ade1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-form">
+        <form class="container-form__form">
+          <div class="container-form__place">
+            <h1 class="form__heading">Nous Contacter</h1>
+            <div class="form__field">
+              <label for="contact-name">Nom</label>
+              <input
+                type="text"
+                name="contact-name"
+                id="contact-name"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__field">
+              <label for="contact-email">E-mail</label>
+              <input
+                type="email"
+                name="contact-email"
+                id="contact-email"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form__field">
+              <label for="contact-message">Votre message</label>
+              <textarea
+                name="contact-message"
+                id="contact-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="description description__contact">
+              <button type="button" class="full-width">Envoyer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
