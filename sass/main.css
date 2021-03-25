@@ -1,4 +1,4 @@
-body {
+body, .form__field input, .form__field textarea {
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-body {
+body, .form__field input, .form__field textarea {
   font-family: "Roboto", sans-serif;
 }
 
@@ -159,6 +159,14 @@ nav {
 
 .form__heading {
   font-size: 2.7rem;
+}
+
+.form__field input {
+  font-size: 1.5rem;
+}
+
+.form__field textarea {
+  font-size: 1.5rem;
 }
 
 .header {
@@ -1268,6 +1276,7 @@ footer a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: gray;
 }
 
 .container-form__place .form__field input {
@@ -1275,6 +1284,8 @@ footer a {
   border-bottom: 2px solid #000;
   background: #f7f7f7;
   width: 100%;
+  padding: 0.5rem;
+  padding-left: 0;
 }
 
 .container-form__place .form__field input:focus {

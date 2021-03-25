@@ -137,4 +137,12 @@ nav {
     font-size: 2.7rem;
     @extend %Shrikhand;
   }
+  &__field input {
+    font-size: 1.5rem;
+    @extend %Roboto;
+  }
+  &__field textarea {
+    font-size: 1.5rem;
+    @extend %Roboto;
+  }
 }

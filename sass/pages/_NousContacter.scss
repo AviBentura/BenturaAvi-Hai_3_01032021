@@ -30,12 +30,15 @@
       &__field label {
         padding: 2.3rem 0 1rem 0;
         justify-content: flex-start;
+        color: $dark-gray;
       }
       &__field input {
         border: none;
         border-bottom: 2px solid $black;
         background: $light-white;
         width: 100%;
+        padding: 0.5rem;
+        padding-left: 0;
         &:focus {
           outline: none;
         }
