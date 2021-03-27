@@ -1,5 +1,8 @@
-.header {
+header {
   @include disposition;
+  flex-direction: column;
+}
+.header {
   &__logo {
     @include disposition;
     height: $size;

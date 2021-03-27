@@ -169,7 +169,20 @@ nav {
   font-size: 1.5rem;
 }
 
-.header {
+/* MEDIA QUERIES FONT */
+@media screen and (min-width: 780px) and (max-width: 1440px) {
+  header .description button {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  main nav h2 {
+    font-size: 2.5rem;
+  }
+}
+
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +193,10 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header__logo {
@@ -1146,6 +1163,138 @@ footer a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1440px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "photo desc" "description description";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto 36rem;
+        grid-template-rows: auto 36rem;
+  }
+  header .desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 2rem;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 60%;
+    height: 50%;
+    margin: 2.5rem;
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  header .desc input {
+    outline: none;
+  }
+  header .desc input[type="search"] {
+    background: #fff;
+    margin-right: 1.5rem;
+    width: 78%;
+  }
+  header .desc label {
+    padding-left: 1rem;
+  }
+  header .description {
+    width: 200%;
+    height: 100%;
+  }
+  header .description button {
+    padding: 2.2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6.3rem;
+}
+
+.header__logo img {
+  width: 16.3rem;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1440px) {
+  .header__logo img {
+    width: 21.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  main nav h2 {
+    margin-left: 4rem;
+  }
+  main .nav__fonction span {
+    top: 23px;
+    left: 25px;
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: 5px 0 0 9px;
+  }
+  main .card {
+    background: #fff;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 5rem;
+    width: 90%;
+  }
+  main .card h2 {
+    margin-bottom: 3rem;
+  }
+  main .card .card__proj {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2.5rem;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    margin-bottom: 7.5rem;
+  }
+  main .card .card__proj .card__restaurant {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  footer svg {
+    margin: 2rem 0 2rem 6rem;
+  }
+  footer .pied-page--text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    /*& li {
+            padding-left: 2rem;
+          }*/
   }
 }
 

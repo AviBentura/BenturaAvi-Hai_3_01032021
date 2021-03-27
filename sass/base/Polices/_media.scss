@@ -1,3 +1,117 @@
+header {
+  @media screen and (min-width: 780px) and (max-width: 1440px) {
+    display: grid;
+    grid-template-areas:
+      "photo desc"
+      "description description";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 36rem;
+    & .desc {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 2rem;
+      border: 1px solid darken($gray, 15%);
+      background: $white;
+      box-shadow: none;
+      width: 60%;
+      height: 50%;
+      margin: 2.5rem;
+      transform: translateX(20%);
+      & input {
+        outline: none;
+        &[type="search"] {
+          background: $white;
+          margin-right: 1.5rem;
+          width: 78%;
+        }
+      }
+      & label {
+        padding-left: 1rem;
+      }
+    }
+    & .description {
+      width: 200%;
+      height: 100%;
+      & button {
+        padding: 2.2rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+    }
+  }
+}
+
+.header {
+  &__logo {
+    @include disposition;
+    height: $size;
+  }
+  &__logo img {
+    width: ($size + 10);
+    @media screen and (min-width: 780px) and (max-width: 1440px) {
+      width: ($size + 15);
+    }
+  }
+}
+
+main {
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    & nav h2 {
+      margin-left: 4rem;
+    }
+    & .nav__fonction {
+      & span {
+        top: 23px;
+        left: 25px;
+        width: 2.7rem;
+        height: 2.7rem;
+        padding: 5px 0 0 9px;
+      }
+    }
+    & .card {
+      background: $white;
+      margin-top: 0;
+      padding: 0;
+      padding-top: 5rem;
+      width: 90%;
+      & h2 {
+        margin-bottom: 3rem;
+      }
+      & .card__proj {
+        display: grid;
+        grid-gap: 2.5rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-bottom: 7.5rem;
+        & .card__restaurant {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    & svg {
+      margin: 2rem 0 2rem 6rem;
+    }
+    & .pied-page {
+      &--text {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          /*& li {
+            padding-left: 2rem;
+          }*/
+        }
+      }
+    }
+  }
+}
+
 .container {
   &__effect {
     & .place {
