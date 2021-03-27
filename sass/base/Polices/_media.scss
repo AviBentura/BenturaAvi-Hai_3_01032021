@@ -1,5 +1,5 @@
 header {
-  @media screen and (min-width: 780px) and (max-width: 1440px) {
+  @media screen and (min-width: 780px) and (max-width: 2560px) {
     display: grid;
     grid-template-areas:
       "photo desc"
@@ -55,7 +55,7 @@ header {
 }
 
 main {
-  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  @media screen and (min-width: 1024px) and (max-width: 2560px) {
     display: grid;
     grid-template-columns: 40% 60%;
     & nav h2 {
@@ -93,20 +93,11 @@ main {
   }
 }
 
-footer {
-  @media screen and (min-width: 1024px) and (max-width: 1440px) {
-    & svg {
-      margin: 2rem 0 2rem 6rem;
-    }
-    & .pied-page {
-      &--text {
-        ul {
-          display: flex;
-          justify-content: space-around;
-          /*& li {
-            padding-left: 2rem;
-          }*/
-        }
+main {
+  @media screen and (min-width: 1024px) and (max-width: 1150px) {
+    & .nav__fonction {
+      & span {
+        left: -13px;
       }
     }
   }
@@ -147,6 +138,31 @@ footer {
         }
         @media screen and (min-width: 375px) and (max-width: 412px) {
           transform: translateX(1%);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  @media screen and (min-width: 1024px) and (max-width: 2560px) {
+    display: grid;
+    grid-template-columns: 80%;
+    & svg {
+      margin: 2rem 0 2rem 0;
+      width: 13rem;
+    }
+    & .pied-page {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6.4rem;
+      &--image {
+        margin-left: 0;
+      }
+      &--text {
+        ul {
+          display: flex;
+          justify-content: space-between;
         }
       }
     }

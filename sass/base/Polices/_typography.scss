@@ -150,7 +150,7 @@ nav {
 /* MEDIA QUERIES FONT */
 
 header {
-  @media screen and (min-width: 780px) and (max-width: 1440px) {
+  @media screen and (min-width: 780px) and (max-width: 2560px) {
     & .description {
       & button {
         font-size: 1.8rem;
@@ -160,10 +160,27 @@ header {
 }
 
 main {
-  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  @media screen and (min-width: 1024px) and (max-width: 2560px) {
     & nav {
       & h2 {
         font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  @media screen and (min-width: 1024px) and (max-width: 2560px) {
+    & .pied-page {
+      &--text {
+        ul {
+          & li {
+            font-size: 1.6rem;
+            & i {
+              font-size: 1.6rem;
+            }
+          }
+        }
       }
     }
   }

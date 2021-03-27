@@ -170,15 +170,24 @@ nav {
 }
 
 /* MEDIA QUERIES FONT */
-@media screen and (min-width: 780px) and (max-width: 1440px) {
+@media screen and (min-width: 780px) and (max-width: 2560px) {
   header .description button {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
   main nav h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  footer .pied-page--text ul li {
+    font-size: 1.6rem;
+  }
+  footer .pied-page--text ul li i {
+    font-size: 1.6rem;
   }
 }
 
@@ -1166,7 +1175,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1440px) {
+@media screen and (min-width: 780px) and (max-width: 2560px) {
   header {
     display: -ms-grid;
     display: grid;
@@ -1240,7 +1249,7 @@ footer a {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
   main {
     display: -ms-grid;
     display: grid;
@@ -1282,19 +1291,9 @@ footer a {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  footer svg {
-    margin: 2rem 0 2rem 6rem;
-  }
-  footer .pied-page--text ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    /*& li {
-            padding-left: 2rem;
-          }*/
+@media screen and (min-width: 1024px) and (max-width: 1150px) {
+  main .nav__fonction span {
+    left: -13px;
   }
 }
 
@@ -1354,6 +1353,40 @@ footer a {
   .container__effect:hover .place {
     -webkit-transform: translateX(1%);
             transform: translateX(1%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+  }
+  footer svg {
+    margin: 2rem 0 2rem 0;
+    width: 13rem;
+  }
+  footer .pied-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 6.4rem;
+  }
+  footer .pied-page--image {
+    margin-left: 0;
+  }
+  footer .pied-page--text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
