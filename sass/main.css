@@ -1782,6 +1782,32 @@ footer a {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 779px) {
+  main .container-form__form {
+    padding-left: 0;
+  }
+  main .container-form__place {
+    height: 50rem;
+  }
+  main .container-form__place .form__field textarea {
+    height: 5rem;
+  }
+}
+
+@media screen and (min-width: 778px) and (max-width: 2560px) {
+  main .container-form__place {
+    height: 50rem;
+    width: 50%;
+  }
+  main .container-form__place .form__field textarea {
+    height: 5rem;
+    width: 100%;
+  }
+  main .container-form__place .full-width {
+    width: 22rem;
+  }
+}
+
 .container-form {
   display: -webkit-box;
   display: -ms-flexbox;
