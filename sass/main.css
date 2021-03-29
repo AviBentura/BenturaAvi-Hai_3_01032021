@@ -845,14 +845,16 @@ nav a {
 
 .tr1 {
   position: absolute;
-  top: 0.5rem;
-  right: 0.9rem;
+  top: 0.3rem;
+  right: 0.5rem;
   z-index: 2;
   fill: url(#grad2);
   opacity: 0;
 }
 
 .tr1:hover {
+  width: 3.4rem;
+  height: 3.4rem;
   cursor: pointer;
   opacity: 1;
   -webkit-animation: progress-heart 0.8s cubic-bezier(0, 0.88, 0.56, 1) forwards;
