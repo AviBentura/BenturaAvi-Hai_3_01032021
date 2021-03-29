@@ -1342,6 +1342,16 @@ footer a {
           animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1300ms both;
 }
 
+.art__list:nth-of-type(4) {
+  -webkit-animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1500ms both;
+          animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1500ms both;
+}
+
+.art__list:nth-of-type(5) {
+  -webkit-animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1700ms both;
+          animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 1700ms both;
+}
+
 @-webkit-keyframes box-scaling {
   0% {
     -webkit-transform: translateY(0);
