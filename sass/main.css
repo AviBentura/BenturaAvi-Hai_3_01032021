@@ -1113,7 +1113,7 @@ footer a {
 }
 
 .art__list--description p {
-  width: 100%;
+  width: 96%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1159,6 +1159,7 @@ footer a {
           align-items: flex-end;
   padding-right: 25px;
   padding-bottom: 1px;
+  margin-left: 0;
   background: #fff;
   border-radius: initial;
   width: 10px;
@@ -1251,10 +1252,26 @@ footer a {
           justify-content: flex-end;
 }
 
+.container__effect .art__list--description {
+  width: 100%;
+  -webkit-transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
+  transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
+}
+
+.container__effect .art__list--description .trunk {
+  width: 90%;
+  -webkit-transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
+  transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
+}
+
 .container__effect .art__list--titre {
   width: 100%;
-  -webkit-transition: width 0.7s ease-in-out;
-  transition: width 0.7s ease-in-out;
+}
+
+.container__effect .art__list--titre h4 {
+  width: 100%;
+  -webkit-transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
+  transition: width 1.4s cubic-bezier(0, 1.09, 0.19, 0.96) 200ms;
 }
 
 .container__effect .place {
@@ -1733,6 +1750,18 @@ footer a {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
+  .art__list .effect--1 {
+    margin-left: -18px;
+  }
+  .art__list--description p {
+    width: 88%;
+  }
+  .container__effect:hover .art__list--description {
+    width: 72%;
+  }
+  .container__effect:hover .art__list--titre h4 {
+    width: 72%;
+  }
 }
 
 /*.container {
@@ -1775,6 +1804,33 @@ footer a {
     }
   }
 }*/
+@media screen and (max-width: 385px) {
+  .container__effect:hover .art__list--description {
+    width: 72%;
+  }
+  .container__effect:hover .art__list--titre h4 {
+    width: 72%;
+  }
+}
+
+@media screen and (min-width: 385px) and (max-width: 405px) {
+  .container__effect:hover .art__list--description {
+    width: 76%;
+  }
+  .container__effect:hover .art__list--titre h4 {
+    width: 76%;
+  }
+}
+
+@media screen and (min-width: 405px) and (max-width: 453px) {
+  .container__effect:hover .art__list--description {
+    width: 80%;
+  }
+  .container__effect:hover .art__list--titre h4 {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 779px) {
   main .container-form__form {
     padding-left: 0;
